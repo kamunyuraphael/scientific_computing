@@ -1,6 +1,6 @@
 # BIT 2118 – Scientific Computing: Individual Repository
 
-**Student:** [your name] · **Reg. no:** [your registration number] · **Unit:** BIT 2118 Scientific Computing
+**Student:** Kamunyu Raphael · **Reg. no:** BSCCS/2024/45844 · **Unit:** BIT 2118 Scientific Computing
 
 Each task (2 to 20) has a program, console output, documentation and, where useful, a figure. The documentation for every task follows the brief:
 
