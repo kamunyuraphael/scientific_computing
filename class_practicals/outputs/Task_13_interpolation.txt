@@ -1,0 +1,17 @@
+=== PART 1: Original ===
+Linear estimate at 10:30: 23.25 C
+Cubic estimate at 10:30: 23.36 C
+Number of 10-minute estimates: 37
+Worked example check: 20C at 10:00, 24C at 12:00 -> 22.0 C at 11:00
+
+=== PART 2: Changed input - quadratic interp, then change the 10:00 reading 22.5 -> 26.5 ===
+Quadratic at 10:30: 23.360 C
+Linear at 10:30 with new reading: 25.250 C | cubic: 25.680 C
+Cubic spline overshoot with bad reading, max between 9 and 11: 26.57
+Extrapolation at 15:00 raises ValueError -> A value (15.0) in x_new is above the interpolation range's m
+
+=== PART 3: Related case - PM2.5 sensor with missing readings, scored against truth ===
+Missing hours: [ 5.  6.  7. 14. 15.]
+True   : [48.66 47.   48.66 17.   15.2 ]
+Linear : [52.32 52.32 52.32 22.   19.84] | RMSE 4.509
+Cubic  : [50.16 49.43 50.16 17.75 15.91] | RMSE 1.513

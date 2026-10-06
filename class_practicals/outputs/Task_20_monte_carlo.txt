@@ -1,0 +1,30 @@
+=== PART 0: Estimate pi (7850 of 10000 -> 3.14 and a real run) ===
+N=    1,000: pi ~ 3.08400 | error 0.05759
+N=  100,000: pi ~ 3.15012 | error 0.00853
+N=5,000,000: pi ~ 3.14225 | error 0.00066
+
+=== PART 1: Original - server overload ===
+Estimated overload probability: 10.6160%
+Number of overload cases: 10616 out of 100000
+Exact probability (normal CDF): 10.5650% | MC standard error: 0.0974%
+95% interval: [10.4251%, 10.8069%]
+
+=== PART 2: Changed input - capacity 1000 -> 1150 (rare event), and N = 1,000 ===
+capacity 900, N=  1,000: estimate 31.7000% | exact 33.8461%
+capacity 900, N=100,000: estimate 33.4720% | exact 33.8461%
+capacity 1000, N=  1,000: estimate 8.7000% | exact 10.5650%
+capacity 1000, N=100,000: estimate 10.3290% | exact 10.5650%
+capacity 1150, N=  1,000: estimate 0.6000% | exact 0.6210%
+capacity 1150, N=100,000: estimate 0.6080% | exact 0.6210%
+Std demand 120 -> 200 at capacity 1000: 22.3660% (exact 22.6627%)
+
+=== PART 3: Related case - will a 3-task project finish within 30 days? ===
+Mean total duration: 32.31 days | std 3.88
+P(total > 30 days) = 70.6355%
+Median 32.13 | 90th percentile 37.50 | 95th percentile 39.02 days
+Sum of 'most likely' values = 28 days (ignores skew; mean is 32.31)
+  deadline 26 days -> P(late) = 95.82%
+  deadline 28 days -> P(late) = 86.46%
+  deadline 30 days -> P(late) = 70.64%
+  deadline 32 days -> P(late) = 51.25%
+  deadline 35 days -> P(late) = 24.47%

@@ -1,0 +1,18 @@
+=== PART 1: Original - RC charging, R=1000, C=0.001 (tau = 1 s) ===
+Solver success: True
+Capacitor voltage at 5 s: 4.9663 V
+Maximum error against exact solution: 9.282e-10 V
+Function evaluations: 386
+Voltage at t = tau (1 s): 3.1605 V (theory 63.2% of 5 V = 3.1606)
+
+=== PART 2: Changed input - C 0.001 -> 0.004 (tau = 4 s); then looser tolerance; then Radau solver ===
+V(5 s) = 3.5675 V (theory 3.5675); fraction of supply reached 71.3%
+Loose tolerance rtol=1e-3: max error 6.64e-04 V, nfev 56 (was 386)
+Stiff-capable solver Radau: max error 4.94e-10 V, nfev 1435
+
+=== PART 3: Related case - SIR epidemic, population 10,000, beta=0.35, gamma=0.10 ===
+R0 = beta/gamma = 3.50
+Peak infections: 3566 on day 31.8
+Total ever infected (final R): 9660 (96.6%) | still susceptible: 340
+Conservation check max |S+I+R-N|: 7.28e-12
+With distancing beta=0.18 (R0=1.8): peak 1185 on day 80.4; final infected 7223 (72.2%)

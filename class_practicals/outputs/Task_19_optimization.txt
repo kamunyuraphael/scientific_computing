@@ -1,0 +1,23 @@
+=== PART 0: f(x) = (x-3)^2 + 2 ===
+Minimum at x = [3.] | value = 2.0
+
+=== PART 1: Original ===
+Optimization success: True
+Type A allocation: 0.000
+Type B allocation: 5.882
+Total capacity: 1000.00
+Minimum planning cost: 105.88
+Best nearby integer solution (cost, A, B, capacity): (108, 0, 6, 1020)
+Cost per capacity unit: A = 0.1200, B = 0.1059 -> B is cheaper per unit of capacity
+
+=== PART 2: Changed input - Type B cost 18 -> 24 and requirement 1000 -> 1500 ===
+cost_B=24: A=10.000, B=0.000, cost 120.00 | integer best (120, 10, 0, 1000)  (cost per unit B = 0.1412 > A 0.1200)
+required=1500: A=0.000, B=8.824, cost 158.82 | integer best (162, 0, 9, 1530)
+
+=== PART 3: Related case - maximise factory profit ===
+Success: True
+Tables = 20.000, Chairs = 60.000, Max profit = 2600.00
+Machine hours used: 100.00/100 | labour used: 80.00/80 | tables limit: 20.00/40
+Both machine and labour constraints are active (binding); the table-limit is slack.
+Integer check (profit, tables, chairs): (2600, 20, 60)
+If machine hours rise 100 -> 120: tables 40.00, chairs 40.00, profit 2800.00 (gain 200.00 for 20 extra hours)

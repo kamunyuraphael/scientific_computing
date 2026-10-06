@@ -1,0 +1,44 @@
+=== PART 1: Original - rotate 45 deg, scale (2, 1.5) ===
+Original points:
+ [[0. 0.]
+ [1. 0.]
+ [1. 1.]
+ [0. 1.]]
+Transformation matrix:
+ [[ 1.41421356 -1.06066017]
+ [ 1.41421356  1.06066017]]
+Transformed points:
+ [[ 0.          0.        ]
+ [ 1.41421356  1.41421356]
+ [ 0.35355339  2.47487373]
+ [-1.06066017  1.06066017]]
+Determinant: 2.9999999999999996
+
+=== PART 2: Changed input - rotate 90 deg, scale (1, 1) then (2, 0) ===
+90 deg rotation only:
+ [[ 0.  0.]
+ [ 0.  1.]
+ [-1.  1.]
+ [-1.  0.]] 
+Determinant: 1.0
+Scale y by 0 (singular):
+ [[0.     0.    ]
+ [1.4142 1.4142]
+ [1.4142 1.4142]
+ [0.     0.    ]] 
+Determinant: 0.0
+
+=== PART 3: Related case - reflect a triangle in the y-axis then shear ===
+Combined matrix M = shear @ reflect:
+ [[-1.   0.5]
+ [ 0.   1. ]]
+New triangle:
+ [[ 0.   0. ]
+ [-4.   0. ]
+ [-0.5  3. ]]
+det(M) = -1.0 (negative => orientation flipped)
+Recovered with inverse:
+ [[0. 0.]
+ [4. 0.]
+ [2. 3.]]
+AA^-1 = I check: True

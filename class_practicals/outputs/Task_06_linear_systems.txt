@@ -1,0 +1,20 @@
+=== PART 1: Original - servers ===
+Type A servers: 3
+Type B servers: 4
+Verification A @ solution: [20. 72.]
+Residual: [0. 0.]
+Residual norm: 0.0
+det(A) = 31.999999999999986 | cond(A) = 6.98
+
+=== PART 2: Changed input - totals become 28 CPU and 96 GB ===
+Solution (A, B): [4.5 5. ] | residual norm: 0.0
+
+Changed to an inconsistent/near-singular system (row 2 = 2 x row 1 + tiny change):
+cond(A3) = 2.500e+05 | solution: [ 5. -0.]
+Tiny change in b -> [ 0. 10.]
+
+=== PART 3: Related case - mesh-current analysis of a 3-loop circuit ===
+Mesh currents I1, I2, I3 (A): [ 0.61224  0.04898 -0.18367]
+Verification R @ I = [12. -0. -6.]
+Residual norm: 9.155133597044475e-16
+Current through shared resistor R12 (I1-I2): 0.56327 A

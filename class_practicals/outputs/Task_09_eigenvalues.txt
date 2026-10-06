@@ -1,0 +1,25 @@
+=== PART 1: Original ===
+Dominant eigenvalue: 2.5615528128088285
+Eigenvector-based importance:
+A: 0.2192
+B: 0.2808
+C: 0.2808
+D: 0.2192
+Verification error: 1.9357399876532506e-15
+All eigenvalues: [ 2.5616  0.     -1.     -1.5616]
+
+=== PART 2: Changed input - add link A-D ===
+Dominant eigenvalue: 3.0 (was 2.5616 )
+A: 0.2500
+B: 0.2500
+C: 0.2500
+D: 0.2500
+
+=== PART 3: Related case - PageRank for 5 web pages (damping 0.85) ===
+Power iteration converged in 35 steps
+Home   PageRank = 0.3456 (eigenvector method 0.3456)
+Blog   PageRank = 0.2521 (eigenvector method 0.2521)
+News   PageRank = 0.1769 (eigenvector method 0.1769)
+Shop   PageRank = 0.1371 (eigenvector method 0.1371)
+About  PageRank = 0.0883 (eigenvector method 0.0883)
+Dominant eigenvalue of Google matrix: 1.0

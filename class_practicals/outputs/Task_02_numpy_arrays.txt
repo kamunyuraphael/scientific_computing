@@ -1,0 +1,16 @@
+=== PART 1: Original - weather station ===
+Daily mean temperature: 23.12 C
+Minimum temperature: 17.50 C
+Maximum temperature: 29.40 C
+First six Fahrenheit readings: [65.3  64.4  64.04 63.5  64.22 66.2 ]
+
+=== PART 2: Changed input - midday (12:00) reading is a sensor spike (29.4 -> 45.0) ===
+Mean: 23.77 C (was 23.12)
+Max : 45.00 C (was 29.40)
+Median: 22.75 C (was 22.75)
+
+=== PART 3: Related case - greenhouse IoT, 24 hourly readings ===
+Mean 23.84 C | min 17.64 C | max 30.28 C
+Hours above 28.0 C: 6 -> hours [12 13 14 15 16 17]
+Std deviation: 4.29 C
+Max in Kelvin: 303.43 K

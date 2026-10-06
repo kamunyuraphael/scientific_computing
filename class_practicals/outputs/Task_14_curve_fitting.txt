@@ -1,0 +1,19 @@
+=== PART 1: Original - quadratic ===
+Fitted model: y = 0.002167x^2 + -0.1345x + 85.00
+RMSE: 1.55 ms
+Predicted response at 400 users: 377.86 ms
+Residuals: [-1.69  1.79  1.43  0.24 -1.79 -1.64  1.67]
+Parameter standard errors: [8.900000e-05 3.661600e-02 3.194649e+00]
+
+=== PART 2: Changed model - straight line and exponential ===
+Linear: y = 0.7321x + 20.00 | RMSE 18.83 | at 400: 312.9 ms
+Exponential: y = 33.654*exp(0.00596x) + 34.72 | RMSE 1.43 | at 400: 400.4 ms
+Order-3 polynomial RMSE: 0.143 (overfits 7 points with 4 parameters)
+
+=== PART 3: Related case - logistic growth of app users (synthetic noisy data) ===
+True   K=5000, r=0.45, t0=9
+Fitted K=4971.2, r=0.464, t0=8.97 | RMSE 107.2 users
+Std errors: [5.8019e+01 2.0000e-02 1.1200e-01]
+Predicted users in week 25: 4968 | carrying capacity K ~ 4971
+R^2 = 0.9969
+Fit using only weeks 0-8: K=6111 (true 5000) -> extrapolation is unreliable

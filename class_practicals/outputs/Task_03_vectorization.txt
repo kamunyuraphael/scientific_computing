@@ -1,0 +1,13 @@
+=== PART 1: Original - 1,000,000 latency readings ===
+First five squared latency values: [0.03787665 0.01266192 0.04637842 0.03092504 0.00078812]
+Loop time: 0.1708 s
+Vectorized time: 0.003883 s
+Approximate speed-up: 44.0x
+
+=== PART 2: Changed input - N = 1,000 instead of 1,000,000 ===
+Loop time: 0.000197 s | Vectorized: 0.00000595 s | speed-up: 33.1x
+
+=== PART 3: Related case - ADC samples to RMS voltage (2,000,000 samples) ===
+RMS (loop) = 1.905799 V | RMS (vectorized) = 1.905799 V
+Loop 2.452 s | Vectorized 0.01520 s | speed-up 161x
+Identity check max |sin^2+cos^2-1| = 2.220446049250313e-16

@@ -1,0 +1,24 @@
+=== PART 0: Worked example dy/dt = y, y(0)=1, h=0.1 ===
+y1, y2 = [1.1  1.21] (exact e^0.1, e^0.2 = 1.1052 1.2214 )
+
+=== PART 1: Original - cooling, k=0.12, h=1 min, 30 min ===
+Euler temperature after 30 min: 26.40 C
+Exact temperature after 30 min: 26.78 C
+Final absolute error: 0.3720 C
+
+=== PART 2: Changed input - step size h and rate k ===
+h= 5.00 min: T(30)=25.2662 C | error 1.50980 C
+h= 2.00 min: T(30)=26.0595 C | error 0.71650 C
+h= 1.00 min: T(30)=26.4041 C | error 0.37196 C
+h= 0.50 min: T(30)=26.5870 C | error 0.18901 C
+h= 0.10 min: T(30)=26.7378 C | error 0.03825 C
+h= 0.01 min: T(30)=26.7722 C | error 0.00384 C
+h=20 (h*k=2.4 > 2): oscillating/unstable -> [ 90. -66.]
+k=0.30 (faster cooling), h=1: T(30)=25.001 C vs exact 25.008 C
+
+=== PART 3: Related case - logistic growth of a fish population (r=0.4/yr, K=1000, P0=50) ===
+h=2.00 yr: P(10)=  600.75 | P(30)= 1000.00 | error at t=10:  141.087
+h=1.00 yr: P(10)=  679.03 | P(30)=  999.98 | error at t=10:   62.814
+h=0.25 yr: P(10)=  727.91 | P(30)=  999.92 | error at t=10:   13.931
+Exact: P(10)=741.84, P(30)=999.88 -> approaches carrying capacity K=1000
+Population reaches K/2=500 at t = 7.36 years (inflection point of the S-curve)

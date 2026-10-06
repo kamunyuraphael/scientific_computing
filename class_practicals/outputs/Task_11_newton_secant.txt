@@ -1,0 +1,21 @@
+=== PART 1: Original ===
+IRR using Newton-Raphson: 11.542461%
+IRR using Secant method: 11.542461%
+NPV at Newton solution: 0.000000
+Newton iterations (scipy): 4 | Secant iterations: 7
+Manual Newton iterates: ['0.10000000', '0.11502117', '0.11542433', '0.11542461', '0.11542461']
+Textbook check, f(x)=x^2-2 from x0=1.5: [1.5, 1.416667, 1.414216, 1.414214, 1.414214, 1.414214]
+
+=== PART 2: Changed input - larger final cash flow and different start ===
+IRR with final inflow 5500: 19.5116% (was 11.5425%)
+Start x0=0.1: root 11.542461% in 4 iterations
+Start x0=0.5: root 11.542461% in 8 iterations
+Start x0=2.0: Newton DIVERGED (|NPV| at 'root' is not ~0) - a poor start can fail
+
+=== PART 3: Related case - loan APR from payment ===
+Monthly rate (Newton): 0.726144% in 6 iterations
+Monthly rate (Secant): 0.726144% in 7 iterations
+Nominal APR = 12 x monthly = 8.7137%
+Effective annual rate = 9.0703%
+Total repaid 13680 -> interest cost 1680
+Check payment at root: 380.000000

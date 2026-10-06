@@ -1,0 +1,19 @@
+=== PART 1: Original - smart meter ===
+Energy using trapezoidal rule: 15.700 kWh
+Energy using Simpson's rule: 15.800 kWh
+Difference between estimates: 0.100 kWh
+Constant 2 kW for 3 h: 6.0 kWh
+
+=== PART 2: Changed input - readings every 4 h (sub-sample) and a spike at 6 h (1.8 -> 3.0) ===
+Every 4 h: trapezoid 15.400 | Simpson 15.967 kWh
+Spike at 6 h: trapezoid 18.100 | Simpson 19.000 kWh
+
+=== PART 3: Related case - water flow Q(t) = 5 + 3 sin(pi t / 6) L/s, t in [0,12] h -> exact volume known ===
+Exact volume = 216,000 L | quad: 216,000 L (error est 6.7e-13)
+Exact volume over the first 4 h = 102,939.7 L
+(Over the full 12 h the sine term is a whole period, so even the trapezoid rule is exact - see note in docs.)
+n=  3 points on [0,4]: trapezoid err   2880.498 L | Simpson err 237.193599 L
+n=  5 points on [0,4]: trapezoid err    710.109 L | Simpson err  13.353424 L
+n=  9 points on [0,4]: trapezoid err    176.917 L | Simpson err   0.814091 L
+n= 25 points on [0,4]: trapezoid err     19.637 L | Simpson err   0.009978 L
+n=101 points on [0,4]: trapezoid err      1.131 L | Simpson err   0.000033 L

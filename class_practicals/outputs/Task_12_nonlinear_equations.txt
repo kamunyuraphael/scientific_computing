@@ -1,0 +1,27 @@
+=== PART 0: Polynomial x^2 - 5x + 6 = 0 ===
+np.roots: [3. 2.]
+
+=== PART 1: Original - circle r=2 and parabola y=x^2-1 ===
+Initial guess: [1.0, 1.0]
+Intersection: [1.51748991 1.30277564]
+Residuals: [-2.48e-13, -2.42e-13]
+Converged: True
+
+Initial guess: [-1.0, 1.0]
+Intersection: [-1.51748991  1.30277564]
+Residuals: [-2.48e-13, -2.42e-13]
+Converged: True
+
+Guess [1,-2] (lower region; no real intersection exists there): [-3.0000e-04 -1.9384e+00] | residuals [-0.242706 -0.938374] | success: False
+Exact check: y = (-1+sqrt(13))/2 = 1.3027756377319946 ; x = +/- 1.5174899135519797
+
+=== PART 2: Changed input - circle radius 2 -> 1 (r^2 = 1), then 3 ===
+r^2 = 1: intersections found -> [(-1.0, 0.0), (0.0, -1.0), (1.0, 0.0)]
+r^2 = 9: intersections found -> [(-1.83638, 2.37228), (1.83638, 2.37228)]
+
+=== PART 3: Related case - 2-beacon position fix (trilateration) ===
+Guess [2.0, 3.0] -> [3. 4.] | residuals [-0. -0.]
+Guess [2.0, -3.0] -> [ 3. -4.] | residuals [-0. -0.]
+Ambiguity: two beacons give TWO candidate positions; a third beacon is needed.
+Third beacon at (3,8), dist 4 -> least-squares fix: [3. 4.] cost 0.0
+From the upper guess: [3. 4.] cost 6.31e-30
