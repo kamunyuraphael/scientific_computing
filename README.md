@@ -71,4 +71,4 @@ git remote add origin https://github.com/<your-username>/bit2118-scientific-comp
 git push -u origin main
 ```
 
-Then submit the repository link and the documentation on VLMS.
+
