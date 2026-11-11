@@ -1,6 +1,6 @@
 # BIT 2118 – Scientific Computing: Individual Repository
 
-**Student:** Kamunyu Raphael · **Reg. no:**  Bsccs/2024/45844 · **Unit:** BIT 2118 Scientific Computing
+**Student:** Kamunyu Raphael · **Reg. no:** BSCCS/2024/45844 · **Unit:** BIT 2118 Scientific Computing
 
 Each task (2 to 20) has a program, console output, documentation and, where useful, a figure. The documentation for every task follows the brief:
 
@@ -39,15 +39,15 @@ Each task (2 to 20) has a program, console output, documentation and, where usef
 
 ---
 
-## How each program is organised
+## Program organisation
 
-Every script has three clearly marked parts:
+Every script has the three clearly marked parts:
 
-1. **PART 1: Original.** The program from the brief (with extra checks added).
+1. **PART 1: Original.** The program from the brief.
 2. **PART 2: Changed input.** One or more parameters changed, with the effect printed.
 3. **PART 3: Related case.** A different real-world problem with its own assumptions and data.
 
-Console output of each script is saved in `outputs/`. Figures are saved in `figures/` (no window pops up).
+Console output of each script is saved in `outputs/`. Figures are saved in `figures/`.
 
 ## Running
 
